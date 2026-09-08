@@ -1,0 +1,11 @@
+use_default_settings: true
+
+server:
+  port: 8080
+  bind_address: "0.0.0.0"
+  secret_key: "${RANDOM_STRING_60}" # 请随意修改这一串字符
+
+search:
+  formats:
+    - html
+    - json # 关键：必须开启 json，大模型才能读取
